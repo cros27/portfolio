@@ -1,28 +1,11 @@
-const button = document.querySelector('.btn');
-const message = document.querySelector('#message');
+const darkModeBtn = document.getElementById("darkModeBtn");
 
-let isVisible = false;
+darkModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
 
-button.addEventListener('click', function () {
-    if (isVisible) {
-        message.textContent = '';
-        button.textContent = 'Kontak Gua';
-        isVisible = false;
-    } else {
-        message.textContent = 'Email: mfharhan406@gmail.com | GitHub: github.com/cros27';
-        button.textContent = 'Tutup';
-        isVisible = true;
-    }
-});
-
-const darkBtn = document.querySelector('#darkBtn');
-
-darkBtn.addEventListener('click', function () {
-    document.body.classList.toggle('dark');
-
-    if (document.body.classList.contains('dark')) {
-        darkBtn.textContent = 'Light Mode';
-    } else {
-        darkBtn.textContent = 'Dark Mode';
-    }
+  if (document.body.classList.contains("dark")) {
+    darkModeBtn.textContent = "Light Mode";
+  } else {
+    darkModeBtn.textContent = "Dark Mode";
+  }
 });

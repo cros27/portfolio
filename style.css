@@ -3,17 +3,19 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
 .container {
+  background-color: #ffffff;
   max-width: 700px;
-  background: white;
+  width: 100%;
   padding: 25px;
   border-radius: 10px;
 }
@@ -30,20 +32,27 @@ header h1 {
 header h2 {
   margin-top: 0;
   font-weight: normal;
-  color: #555;
+  color: #666;
 }
 
-header a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-header button {
+.buttons {
   margin-top: 15px;
-  padding: 6px 12px;
+}
+
+button {
+  padding: 8px 14px;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
 
 section {
@@ -59,16 +68,32 @@ ul {
   padding-left: 20px;
 }
 
-/* DARK MODE */
+/* 🌙 DARK MODE */
 body.dark {
-  background: #121212;
-  color: #eee;
+  background-color: #121212;
+  color: #eaeaea;
 }
 
 body.dark .container {
-  background: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
 body.dark a {
   color: #4ea3ff;
+}
+
+body.dark button {
+  background-color: #4ea3ff;
+  color: #000;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }
