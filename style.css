@@ -1,102 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 40px;
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    color: #555;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    background: white;
-    padding: 30px;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 8px;
+  max-width: 700px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
 }
 
-.btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+header h1 {
+  margin-bottom: 5px;
+}
+
+header h2 {
+  margin-top: 0;
+  font-weight: normal;
+  color: #555;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+header button {
+  margin-top: 15px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h3 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 ul {
-    margin-bottom: 20px;
+  padding-left: 20px;
 }
 
-#message {
-    margin-top: 15px;
-    color: #007bff;
-    font-weight: bold;
-}
-#message {
-    transition: all 0.3s ease;
+/* DARK MODE */
+body.dark {
+  background: #121212;
+  color: #eee;
 }
 
-.dark {
-    background-color: #121212;
+body.dark .container {
+  background: #1e1e1e;
 }
 
-.dark .container {
-    background-color: #1e1e1e;
-}
-
-.dark h1,
-.dark h2,
-.dark p,
-.dark li {
-    color: #f4f4f4;
-}
-
-hr {
-    margin: 30px 0;
-    border: none;
-    height: 1px;
-    background-color: #ddd;
-}
-
-h3 {
-    margin-top: 25px;
-}
-
-@media (max-width: 600px) {
-    body {
-        padding: 20px;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 26px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-body {
-    line-height: 1.7;
+body.dark a {
+  color: #4ea3ff;
 }
