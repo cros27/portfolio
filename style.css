@@ -97,3 +97,37 @@ body.dark button {
     padding: 20px;
   }
 }
+
+#projects {
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-links a:hover {
+  background: #0056b3;
+}
